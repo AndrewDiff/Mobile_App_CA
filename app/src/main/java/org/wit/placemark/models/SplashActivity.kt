@@ -7,6 +7,7 @@ import android.os.Handler
 import android.view.Window
 import android.view.WindowManager
 import org.wit.placemark.R
+import org.wit.placemark.activities.PlacemarkListActivity
 
 class SplashActivity : AppCompatActivity() {
 
@@ -21,7 +22,9 @@ class SplashActivity : AppCompatActivity() {
         //4second splash time
         Handler().postDelayed({
             //start main activity
-            startActivity(Intent(this@SplashActivity, MainActivity::class.java))
+            startActivity(Intent(this@SplashActivity, PlacemarkListActivity::class.java))
+
+
             //finish this activity
             finish()
         },4000)

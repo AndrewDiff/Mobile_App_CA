@@ -8,85 +8,109 @@
   tools:context="org.wit.placemark.activities.PlacemarkActivity">
 
   <RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintTop_toTopOf="parent">
-
-    <com.google.android.material.appbar.AppBarLayout
-      android:id="@+id/appBarLayout"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:background="@color/colorAccent"
-      android:fitsSystemWindows="true"
-      app:elevation="0dip"
-      app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.0"
+      tools:layout_editor_absoluteX="0dp">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2196F3"
+        android:fitsSystemWindows="true"
+        app:elevation="0dip"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
       <androidx.appcompat.widget.Toolbar
           android:id="@+id/toolbarAdd"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
-          android:background="#2196F3"
+          android:background="#308B7A"
           app:titleTextColor="@color/colorPrimary" />
     </com.google.android.material.appbar.AppBarLayout>
 
     <ScrollView
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      android:layout_below="@id/appBarLayout"
-      android:fillViewport="true">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appBarLayout"
+        android:layout_marginTop="-1dp"
+        android:fillViewport="true">
 
       <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <EditText
-          android:id="@+id/placemarkTitle"
-          android:layout_width="match_parent"
-          android:layout_height="45dp"
-          android:layout_margin="8dp"
-          android:autofillHints=""
-          android:hint="@string/hint_placemarkTitle"
-          android:inputType="text"
-          android:maxLength="25"
-          android:maxLines="1"
-          android:padding="8dp"
-          android:textColor="@color/colorPrimaryDark"
-          android:textSize="14sp" />
-
-        <EditText
-          android:id="@+id/description"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
-          android:layout_margin="8dp"
-          android:hint="@string/hint_placemarkDescription"
-          android:inputType="text"
-          android:maxLength="25"
-          android:maxLines="1"
-          android:padding="8dp"
-          android:textColor="@color/colorPrimaryDark"
-          android:textSize="14sp"/>
+          android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/placemarkTitle"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="8dp"
+            android:autofillHints=""
+            android:backgroundTint="#308B7A"
+            android:drawableTint="#308B7A"
+            android:foregroundTint="#308B7A"
+            android:hint="@string/hint_placemarkTitle"
+            android:inputType="text"
+            android:maxLength="25"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:shadowColor="#308B7A"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHighlight="#308B7A"
+            android:textColorLink="#308B7A"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:backgroundTint="#308B7A"
+            android:hint="@string/starttime"
+            android:inputType="text"
+            android:maxLength="25"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#308B7A"
+            android:buttonTint="#308B7A"
+            android:drawableTint="#308B7A"
+            android:text="Finished"
+            android:textColorLink="#308B7A"
+            android:textSize="18sp"
+            app:layout_constraintTop_toTopOf="@+id/textView"
+            tools:layout_editor_absoluteX="382dp" />
+
 
         <Button
             android:id="@+id/chooseImage"
-            android:layout_width="match_parent"
+            android:layout_width="362dp"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            android:background="#2196F3"
+            android:background="#308B7A"
             android:paddingTop="8dp"
             android:paddingBottom="8dp"
             android:text="@string/button_addImage"
             android:textColor="@color/colorPrimary"
             android:textSize="16sp" />
 
-
         <Button
             android:id="@+id/placemarkLocation"
-            android:layout_width="match_parent"
+            android:layout_width="362dp"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            android:background="#2196F3"
+            android:background="#308B7A"
             android:paddingTop="8dp"
             android:paddingBottom="8dp"
             android:stateListAnimator="@null"
@@ -96,23 +120,35 @@
 
         <Button
             android:id="@+id/btnAdd"
-            android:layout_width="match_parent"
+            android:layout_width="362dp"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            android:background="#2196F3"
+            android:background="#308B7A"
             android:paddingTop="8dp"
             android:paddingBottom="8dp"
             android:stateListAnimator="@null"
             android:text="@string/button_addPlacemark"
             android:textColor="@color/colorPrimary"
             android:textSize="16sp" />
+
+
         <ImageView
             android:id="@+id/placemarkImage"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/wit" />
+            android:layout_height="wrap_content"/>
+
+        <CalendarView
+            android:id="@+id/simpleCalendarView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FAF8F8"
+            android:focusedMonthDateColor="#308B7A"
+            android:selectedWeekBackgroundColor="#308B7A" />
+
       </LinearLayout>
     </ScrollView>
+
+
 
   </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

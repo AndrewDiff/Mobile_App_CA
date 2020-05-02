@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "302427497985",
+    "firebase_url": "https://andrew-e8c4c.firebaseio.com",
+    "project_id": "andrew-e8c4c",
+    "storage_bucket": "andrew-e8c4c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:302427497985:android:a47e26247e5ce41fcbc200",
+        "android_client_info": {
+          "package_name": "org.wit.placemark.activities"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "302427497985-kdkicvv12ullfkf0bkk19o3s5h3egr8o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrxLyS1SaUVU1pvP0TiuJljW7TICsgdgw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "302427497985-kdkicvv12ullfkf0bkk19o3s5h3egr8o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

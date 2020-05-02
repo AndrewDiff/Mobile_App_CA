@@ -4,22 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:background="#EDEBDF"
     android:gravity="center"
-    android:background="@color/colorPrimary"
+    android:orientation="vertical"
     tools:context=".models.SplashActivity">
 
     <ImageView
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        android:src="@drawable/ic_launcher_background" />
+        android:layout_width="317dp"
+        android:layout_height="238dp"
+        android:background="#EFF1F3"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nature Walk"
+        android:textColor="#F95F4A"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Loading..."
-        android:textColor="#FF5722"
-        android:textSize="30sp"
-        android:textStyle="bold" />
+        android:textColor="#0C0C0C"
+        android:textSize="15sp"
+        android:textStyle="italic" />
 
 </LinearLayout>

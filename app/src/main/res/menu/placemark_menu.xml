@@ -11,4 +11,5 @@
         android:title="@string/menu_deletePlacemark"
         app:showAsAction="always" />
 
+
 </menu>
